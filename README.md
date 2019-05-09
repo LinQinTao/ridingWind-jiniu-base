@@ -1,16 +1,18 @@
-# [ridingwind scrolllist](https://gitee.com/LinQinTao/ridingWind-jiniu-base.git)
+# [ridingwind-jiniu-base](https://gitee.com/LinQinTao/ridingWind-jiniu-base.git)
 
-# 当前版本 0.0.1
+# 当前版本 0.0.2
 
 # 简介
 1. 绩牛基础组件
 
 # 使用说明
 
-1. 安装
+一. 安装
 
 ```sh
 npm install --save ridingWind-jiniu-base
 ```
 
-2. demo
+二. 组件
+
+1、[Header](./src/Header/Header.md)

@@ -32,6 +32,14 @@ module.exports = {
         test: /\.css$/,
         loader: 'style-loader!css-loader?minimize&importLoaders=1&module&camelCase&localIdentName=[hash:base64:5]!postcss-loader',
       },
+      {
+        test: /\.(ico|jpg|jpeg|png|gif|svg)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 8124,
+          name: 'images/[name].[hash:6].[ext]',
+        },
+      },
     ],
   },
   externals: {

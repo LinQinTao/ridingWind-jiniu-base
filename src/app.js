@@ -1,2 +1,1 @@
-export RSTATES from './RSTATES';
-export { default as RidingWindScrollList } from './RidingWindScrollList';
+export { default as Header } from './Header/Header';
