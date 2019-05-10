@@ -6,23 +6,23 @@ const leftImg = require('../images/back.png');
 const rightImg = require('../images/question.png');
 /*
   leftObj = {
-    style = {},
+    style: {},
     dom,
     hide,
-    clickFunc= () => {},
+    clickFunc: () => {},
   },
   centerObj: {
-    style = {},
+    style: {},
     title,
     dom,
     hide,
-    clickFunc= () => {},
+    clickFunc: () => {},
   },
   rightObj: {
-    style = {},
+    style: {},
     dom,
     hide,
-    clickFunc= () => {},
+    clickFunc: () => {},
   },
 */
 const Header = (props) => {

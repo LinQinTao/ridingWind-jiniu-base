@@ -23,7 +23,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  padding: 0 0.5rem;
+  padding: 0 calc(20 / 32 * 1rem);
 }
 
 .headerLeft > img {
@@ -42,7 +42,7 @@
   top: 0;
   right: 0;
   height: 100%;
-  padding: 0 0.5rem;
+  padding: 0 calc(20 / 32 * 1rem);
 }
 
 .headerRight > img {
