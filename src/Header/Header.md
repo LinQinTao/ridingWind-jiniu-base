@@ -36,3 +36,26 @@ import { Header } from 'ridingWind-jiniu-base';
 | dom     | dom自定义，eg：`<div>返回</div>`                                  | dom   | noRequired            |
 | hide          | 是否隐藏，默认 false                        | Boolean   |            noRequired           |
 | clickFunc          | 点击执行的方法                | Function   |            noRequired           |
+
+
+### 2、中间dom相关设置（centerObj）
+
+`注：此参数的 title 和 dom 有且只能选填一个`
+
+| 参数             | 说明                                          | 类型   | 备注                  |
+| ---------------- | --------------------------------------------- | ------ | --------------------- |
+| style           | 样式自定义                                  | Object | noRequired            |
+| title     | 显示的文本                                 | String   | noRequired            |
+| dom     | dom自定义，eg：`<div>返回</div>`                                  | dom   | noRequired            |
+| hide          | 是否隐藏，默认 false                        | Boolean   |            noRequired           |
+| clickFunc          | 点击执行的方法                | Function   |            noRequired           |
+
+
+### 3、右边dom相关设置（rightObj）
+
+| 参数             | 说明                                          | 类型   | 备注                  |
+| ---------------- | --------------------------------------------- | ------ | --------------------- |
+| style           | 样式自定义                                  | Object | noRequired            |
+| dom     | dom自定义，eg：`<div>返回</div>`                                  | dom   | noRequired            |
+| hide          | 是否隐藏，默认 false                        | Boolean   |            noRequired           |
+| clickFunc          | 点击执行的方法                | Function   |            noRequired           |
