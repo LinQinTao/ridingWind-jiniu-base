@@ -1,6 +1,6 @@
 {
   "name": "ridingwind-jiniu-base",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "base components for jiniu",
   "main": "index.js",
   "scripts": {

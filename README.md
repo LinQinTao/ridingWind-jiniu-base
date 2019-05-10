@@ -1,6 +1,6 @@
 # [ridingwind-jiniu-base](https://gitee.com/LinQinTao/ridingWind-jiniu-base.git)
 
-# 当前版本 0.0.3
+# 当前版本 0.0.4
 
 # 简介
 1. 绩牛基础组件
