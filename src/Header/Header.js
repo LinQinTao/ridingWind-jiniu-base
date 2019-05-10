@@ -8,18 +8,21 @@ const rightImg = require('../images/question.png');
   leftObj = {
     style = {},
     dom,
-    func= () => {},
+    hide,
+    clickFunc= () => {},
   },
   centerObj: {
     style = {},
-    text,
+    title,
     dom,
-    func= () => {},
+    hide,
+    clickFunc= () => {},
   },
   rightObj: {
     style = {},
     dom,
-    func= () => {},
+    hide,
+    clickFunc= () => {},
   },
 */
 const Header = (props) => {
@@ -33,29 +36,42 @@ const Header = (props) => {
   return (
     <header className={styles.headerBox} style={style}>
       <div className={styles.header}>
-        <div
-          className={styles.headerLeft}
-          style={leftObj.style}
-          onClick={leftObj.func}
-        >
-          {leftObj.dom || <img src={leftImg} alt="" />}
-        </div>
+        {
+          leftObj.hide ? null : (
+            <div
+              className={styles.headerLeft}
+              style={leftObj.style}
+              onClick={leftObj.clickFunc}
+            >
+              {leftObj.dom || <img src={leftImg} alt="" />}
+            </div>
+          )
+        }
+        
+        {
+          centerObj.hide ? null : (
+            <div
+              className={styles.headerCenter}
+              style={centerObj.style}
+              onClick={centerObj.clickFunc}
+            >
+              {centerObj.title || centerObj.dom}
+            </div>
+          )
+        }
 
-        <div
-          className={styles.headerCenter}
-          style={centerObj.style}
-          onClick={centerObj.func}
-        >
-          {centerObj.text || centerObj.dom}
-        </div>
-
-        <div
-          className={styles.headerRight}
-          style={rightObj.style}
-          onClick={rightObj.func}
-        >
-          {rightObj.dom || <img src={rightImg} alt="" />}
-        </div>
+        {
+          rightObj.hide ? null : (
+            <div
+              className={styles.headerRight}
+              style={rightObj.style}
+              onClick={rightObj.clickFunc}
+            >
+              {rightObj.dom || <img src={rightImg} alt="" />}
+            </div>
+          )
+        }
+        
       </div>
     </header>
   );
