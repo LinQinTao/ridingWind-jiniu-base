@@ -12,6 +12,7 @@ import { Header } from 'ridingWind-jiniu-base';
 
 <Header
   style={{ color: '#000000' }}
+  className={styles.a}
   leftObj={{ clickFunc: () => {} }}
   centerObj={{ title: '气象九转' }}
   rightObj={{ clickFunc: () => {} }}
@@ -24,6 +25,7 @@ import { Header } from 'ridingWind-jiniu-base';
 | 参数             | 说明                                          | 类型   | 备注                  |
 | ---------------- | --------------------------------------------- | ------ | --------------------- |
 | style           | header样式自定义                                  | Object | noRequired            |
+| className           | 自定义className                                  | String | noRequired            |
 | leftObj     | 左边dom相关设置                                  | Object   | noRequired            |
 | centerObj          | 中间dom相关设置                        | Object   |            isRequired           |
 | rightObj          | 右边dom相关设置                | Object   |            noRequired           |
@@ -33,6 +35,7 @@ import { Header } from 'ridingWind-jiniu-base';
 | 参数             | 说明                                          | 类型   | 备注                  |
 | ---------------- | --------------------------------------------- | ------ | --------------------- |
 | style           | 样式自定义                                  | Object | noRequired            |
+| className           | 自定义className                                  | String | noRequired            |
 | dom     | dom自定义，eg：`<div>返回</div>`                                  | dom   | noRequired            |
 | hide          | 是否隐藏，默认 false                        | Boolean   |            noRequired           |
 | clickFunc          | 点击执行的方法                | Function   |            noRequired           |
@@ -45,6 +48,7 @@ import { Header } from 'ridingWind-jiniu-base';
 | 参数             | 说明                                          | 类型   | 备注                  |
 | ---------------- | --------------------------------------------- | ------ | --------------------- |
 | style           | 样式自定义                                  | Object | noRequired            |
+| className           | 自定义className                                  | String | noRequired            |
 | title     | 显示的文本                                 | String   | noRequired            |
 | dom     | dom自定义，eg：`<div>返回</div>`                                  | dom   | noRequired            |
 | hide          | 是否隐藏，默认 false                        | Boolean   |            noRequired           |
@@ -56,6 +60,7 @@ import { Header } from 'ridingWind-jiniu-base';
 | 参数             | 说明                                          | 类型   | 备注                  |
 | ---------------- | --------------------------------------------- | ------ | --------------------- |
 | style           | 样式自定义                                  | Object | noRequired            |
+| className           | 自定义className                                  | String | noRequired            |
 | dom     | dom自定义，eg：`<div>返回</div>`                                  | dom   | noRequired            |
 | hide          | 是否隐藏，默认 false                        | Boolean   |            noRequired           |
 | clickFunc          | 点击执行的方法                | Function   |            noRequired           |

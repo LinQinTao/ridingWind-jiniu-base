@@ -28,18 +28,19 @@ const rightImg = require('../images/question.png');
 const Header = (props) => {
   const {
     style = {},
+    className,
     leftObj = {},
     centerObj = {},
     rightObj = {},
   } = props;
-
+  console.log(className, 'className');
   return (
-    <header className={styles.headerBox} style={style}>
+    <header className={`${styles.headerBox} ${className}`} style={style}>
       <div className={styles.header}>
         {
           leftObj.hide ? null : (
             <div
-              className={styles.headerLeft}
+              className={`${styles.headerLeft} ${leftObj.className}`}
               style={leftObj.style}
               onClick={leftObj.clickFunc}
             >
@@ -51,7 +52,7 @@ const Header = (props) => {
         {
           centerObj.hide ? null : (
             <div
-              className={styles.headerCenter}
+              className={`${styles.headerCenter} ${centerObj.className}`}
               style={centerObj.style}
               onClick={centerObj.clickFunc}
             >
@@ -63,7 +64,7 @@ const Header = (props) => {
         {
           rightObj.hide ? null : (
             <div
-              className={styles.headerRight}
+              className={`${styles.headerRight} ${rightObj.className}`}
               style={rightObj.style}
               onClick={rightObj.clickFunc}
             >
