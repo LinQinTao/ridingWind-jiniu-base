@@ -11,7 +11,7 @@
 import { Header } from 'ridingWind-jiniu-base';
 
 <Header
-  style={{ fill: '#000000', color: '#000000' }}
+  style={{ color: '#000000' }}
   leftObj={{ clickFunc: () => {} }}
   centerObj={{ title: '气象九转' }}
   rightObj={{ clickFunc: () => {} }}
